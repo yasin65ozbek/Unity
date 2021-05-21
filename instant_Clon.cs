@@ -11,7 +11,7 @@ public class instant_Clon : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Instantiate(klonlanacakNesne, transform.position, Quaternion.identity); //kopyalanacakNesne, pozisyon, açı
-            //Quaternion.identity = açılarının sıfıt olmasını belirtir
+            //Quaternion.identity = açılarının sıfır olmasını belirtir
         }
     }
 }
