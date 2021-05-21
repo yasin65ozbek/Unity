@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -51,7 +51,7 @@ public class input : MonoBehaviour
 
     /*Mousedan girdi almak*/
 
-
+    /*------------------------------------------------------*/
 
     /*Klavyeden girdi almak*/
 
@@ -70,6 +70,17 @@ public class input : MonoBehaviour
         if (Input.GetKey(KeyCode.Space))//Tuşa basıldığı sürece çalışır
         {
             Debug.Log("Boşluk tışına basılı tutuluyor");
+        }
+
+
+        if (Input.anyKey) //Herhangi bir tuşa basılınca
+        {
+            Debug.Log("Herhangi bir tuşa basıldı");
+        }
+
+        if (Input.anyKeyDown)//Herhangi bir tuşa basılı tutuldukça çalışır
+        {
+            Debug.Log("Herhangi bir tuşa basılı tutuluyor");
         }
 
     /*Klavyeden girdi almak*/
